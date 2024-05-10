@@ -26,9 +26,9 @@ export class Ejercicio1Component {
 
   calcularDescuento(precio: number, cantidad:number):string{
     let resultado = "";
-    if(cantidad >= 20){
+    if(cantidad > 20){
       resultado = "El precio por la compra es: " + (precio - (precio * 0.10));
-    }else if (cantidad < 20 && cantidad >10){
+    }else if (cantidad <= 20 && cantidad >10){
       resultado = "El precio por la compra es: " + (precio - (precio * 0.05));
     }else
       resultado = "El precio por la compra es: " + precio;
