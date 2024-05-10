@@ -18,4 +18,14 @@ export class Ejercicio3Component {
   }
   mostrarResultado = false;
   mensaje: string ='';
+
+  calcularResultado() {
+    this.calificaciones.resultado = (Number(this.calificaciones.calificacion1) + Number(this.calificaciones.calificacion2) + Number(this.calificaciones.calificacion3))/3;
+    if (this.calificaciones.resultado >= 70) {
+      this.mensaje = 'Aprobado';
+    } else {
+      this.mensaje = 'Reprobado';
+    }
+    this.mostrarResultado = true;
+  }
 }
