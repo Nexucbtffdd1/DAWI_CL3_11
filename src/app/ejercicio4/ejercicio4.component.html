@@ -1,1 +1,18 @@
-
+<div class="card">
+    <div class="card-header">
+      Formulario de Ejercicio1
+    </div>
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ingresar el numero: </label>
+            <input type="number" class="form-control" [(ngModel)]="calculo.numero" id="txtnumero1" placeholder="Ingresar">
+          </div>
+          <hr />
+          <button type="button" (click)="obtenerResultado()" class="btn btn-warning">Calcular</button>
+          @if (mostrarResultado) {
+            <div class="alert alert-primary" role="alert">
+                {{calculo.camporespuesta}}
+            </div>
+          }
+    </div>
+  </div>
