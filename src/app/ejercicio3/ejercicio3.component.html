@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h1>Calcular promedio e indicar si está aprobado o desaprobado</h1>
+        <h3>Calcular promedio de 3 notas e indicar si está aprobado o desaprobado</h3>
     </div>
     <div class="card-body">
         <div class="mb-3">
@@ -25,7 +25,7 @@
           </div>
           <hr />
           <button type="button" (click)="calcularResultado()"
-          class="btn btn-primary">Calcular</button>
+          class="btn btn-success">Calcular</button>
           @if (mostrarResultado) {
             <div class="alet alert-primary" role="alert">
                 Su promedio es {{calificaciones.resultado}}. Usted está {{mensaje}}
