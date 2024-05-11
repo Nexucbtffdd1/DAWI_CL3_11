@@ -5,11 +5,15 @@
       <h1 class="card-title display-6 mb-3 " >COMPROBADOR DE AÑO BISIESTO</h1>
       <hr>  
       <input type="number" class="form-control" 
-      placeholder="Ingrese año">
+      placeholder="Ingrese año" [(ngModel)]="anio">
     </div>
-<button type="button" class="btn btn-success mb-4">comprobar</button>
-  <div class="alert alert-primary " role="alert" >
-    <P>es año biesto</P>
-</div> 
+<button type="button"  (click)="determinarBisiesto()" class="btn btn-success mb-4">comprobar</button>
+
+@if(mostrarResultado){
+  <div class="alert alert-primary " role="alert">
+    {{resultado}}
+</div> }
+
   </div>
 </div>
+
